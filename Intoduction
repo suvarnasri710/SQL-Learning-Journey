@@ -1,0 +1,52 @@
+# Fundamentals of SQL
+
+SQL (Structured Query Language) is a standard language used to communicate with relational databases.
+
+It allows users to:
+
+* Retrieve data from databases
+* Insert new records
+* Update existing records
+* Delete records
+* Create and modify database objects such as tables, views, and indexes
+* Manage database security and permissions
+
+## Features of SQL
+
+* Easy to learn and use
+* Supports large amounts of data
+* Works with relational databases
+* Provides powerful data retrieval capabilities
+* Supports data integrity and security
+
+## 5 Common SQL Commands
+
+### DDL (Data Definition Language): Used to define and modify database structures.
+
+* CREATE
+* ALTER
+* DROP
+* TRUNCATE
+
+### DML (Data Manipulation Language): Used to manipulate data in tables.
+
+* INSERT
+* UPDATE
+* DELETE
+
+### DQL (Data Query Language): Used to retrieve data from databases.
+
+* SELECT
+
+### DCL (Data Control Language): Used to control access to data.
+
+* GRANT
+* REVOKE
+
+### TCL (Transaction Control Language)
+
+Used to manage transactions.
+
+* COMMIT
+* ROLLBACK
+* SAVEPOINT
