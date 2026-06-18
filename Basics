@@ -1,0 +1,41 @@
+# CREATE DATABASE
+
+The `CREATE DATABASE` statement is a fundamental SQL command used to create a new database.
+
+A database is a structured collection of data that helps organizations store, manage, and retrieve information efficiently.
+
+## Key Points
+
+* Database names should be meaningful and follow naming conventions.
+* Proper database design is important for efficient data management.
+* Databases can store information such as employee records, student details, financial transactions, and inventory data.
+
+* A well-designed database ensures:
+  * Data accuracy
+  * Easy updates and maintenance
+  * Data security
+  * Data integrity
+
+## Syntax
+
+```sql
+CREATE DATABASE database_name;
+```
+
+## Example
+
+```sql
+CREATE DATABASE students;
+```
+
+The above command creates a new database named **students**.
+
+## Real-World Uses of Databases
+
+Databases are widely used to store:
+* Employee records
+* Student information
+* Financial data
+* Customer details
+* Product inventories
+* Hospital records
