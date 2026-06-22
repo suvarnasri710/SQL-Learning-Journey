@@ -1,0 +1,48 @@
+CREATE TABLE Statement
+The CREATE TABLE statement is used to create a new table in a database.
+
+Syntax
+CREATE TABLE table_name (
+  column1 datatype constraint,
+  column2 datatype constraint,
+  column3 datatype constraint,
+  ....
+);
+
+
+The datatype parameter specifies the data type of each column (e.g. varchar, int, date, etc.).
+
+The constraint parameter is optional, and specifies rules for data integrity (e.g. primary key, not null, etc.).
+
+
+Example
+
+The following example creates a table named "Persons" with five columns:
+
+CREATE TABLE Persons (
+  PersonID int PRIMARY KEY,
+  LastName varchar(255) NOT NULL,    //NOT NULL specifies that this column cannot be empty.
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+);
+
+---------------------------------------------------------------------------------------------------
+
+If you create a new table from an existing table, the new table will be filled with the values from the existing table.
+
+Syntax
+
+CREATE TABLE new_table AS
+SELECT column1, column2,...
+FROM existing_table
+WHERE ....;
+  
+The following SQL creates a new table called "GermanCustomers" (which is a copy of the "Customers" table): 
+
+  
+Example
+  
+CREATE TABLE GermanCustomers AS
+SELECT * FROM Customers
+WHERE Country = 'Germany';
