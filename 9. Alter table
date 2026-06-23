@@ -1,0 +1,65 @@
+ALTER TABLE Statement
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+It is also used to add and drop various constraints on an existing table.
+
+Common ALTER TABLE operations are:
+
+Add column - Adds a new column to a table
+Drop column - Deletes a column in a table
+Rename column - Renames a column
+Modify column - Changes the data type, size, or constraints of a column
+Add constraint - Adds a new constraint
+Rename table - Renames a table
+--------------------------------------------------
+
+ALTER TABLE - ADD Column
+
+Syntax
+ALTER TABLE table_name
+ADD column_name datatype;
+
+
+The following SQL adds an "Email" column to the "Customers" table:
+
+Example: 
+
+ALTER TABLE Customers
+ADD Email varchar(255);
+
+-------------------------------------------------
+
+ALTER TABLE - DROP COLUMN
+
+Syntax
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+The following SQL deletes the "Email" column from the "Customers" table:
+
+Example
+ALTER TABLE Customers
+DROP COLUMN Email;
+
+-------------------------------------------------
+
+ALTER TABLE - RENAME COLUMN
+
+Syntax
+ALTER TABLE table_name
+RENAME COLUMN old_name to new_name;
+
+Example
+Alter table student 
+rename column email to Gmail;
+
+--------------------------------------------------
+
+ALTER TABLE - MODIFY Datatype
+
+Syntax
+ALTER TABLE table_name
+MODIFY column_name new_datatype constraint;
+
+Example
+ALTER TABLE Customers
+MODIFY Email varchar(100) NOT NULL;
