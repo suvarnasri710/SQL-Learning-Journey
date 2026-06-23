@@ -1,0 +1,21 @@
+DROP TABLE Statement
+The DROP TABLE statement is used to permanently delete an existing table in a database.
+
+Note: Dropping a table deletes the entire table and all its content!
+
+Syntax
+DROP TABLE table_name;
+
+Example
+DROP TABLE Students;
+
+------------------------------------------------------------------
+
+SQL TRUNCATE TABLE
+The TRUNCATE TABLE statement is used to delete all the records in a table, but it keeps the table structure, columns and constraints.
+
+Syntax
+TRUNCATE TABLE table_name;
+
+Example
+TRUNCATE TABLE Students;
