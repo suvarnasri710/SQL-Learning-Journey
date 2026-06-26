@@ -115,3 +115,18 @@ select * from course;
 |    1 | python      | registered |
 |    2 | java        | pending    |
 +------+-------------+------------+
+
+-----------------------------------------------------------------------------------------------------------------------
+AUTO INCREMENT
+  
+create table student(id int auto_increment primary key, name varchar(50));
+insert into student(name) values ('ram'), ('raj'), ('sita'), ('gita');
+select * from student;
++----+------+
+| id | name |
++----+------+
+|  1 | ram  |
+|  2 | raj  |
+|  3 | sita |
+|  4 | gita |
++----+------+
