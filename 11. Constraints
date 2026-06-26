@@ -25,3 +25,53 @@ Value is optional	                                  Value is mandatory
 Empty values are allowed	                          Empty values are not allowed
 Used for optional information	                      Used for required information
 Example: Middle Name, Alternate Phone	              Example: Student ID, Name
+
+-------------------------------------------------------------------------------------------------------------------------
+PRIMARY KEY 
+A PRIMARY KEY is a column (or combination of columns) that uniquely identifies each row in a table.
+A PRIMARY KEY has two important rules:
+    * Duplicate values are not allowed.
+    * NULL values are not allowed.
+
+Think of it as an identity for each record
+
+-------------------------------------------------------------------------------------------------------------------------
+UNIQUE Constraint
+The UNIQUE constraint ensures that no two rows can have the same value in a column.
+It prevents duplicate values while allowing each row to have a different value.
+
+
+PRIMARY KEY                              UNIQUE                                                
+Uniquely identifies each row             Ensures values are unique                             
+Cannot contain `NULL`                    Can contain `NULL` (MySQL allows one `NULL`)          
+Only one PRIMARY KEY per table           Multiple UNIQUE constraints can exist in a table      
+Automatically creates a unique index     Also creates a unique index                           
+Used as the main identifier of a record  Used for fields that should not have duplicate values 
+
+-------------------------------------------------------------------------------------------------------------------------
+FOREIGN KEY
+The FOREIGN KEY constraint establishes a link between two tables.
+A FOREIGN KEY is a column in a table that refers to the PRIMARY KEY in another table.
+The table with the foreign key column = child table
+The table with the primary key column = referenced or parent table.
+
+-------------------------------------------------------------------------------------------------------------------------
+CHECK Constraint
+The CHECK constraint is used to ensure that the values in a column satisfies a specific condition.
+The CHECK constraint evaluates the data to TRUE or FALSE.
+If the data evaluates to TRUE, the operation is ok. If the data evaluates to FALSE, the entire INSERT or UPDATE operation is aborted, and an error is raised.
+
+-------------------------------------------------------------------------------------------------------------------------
+DEFAULT Constraint
+The DEFAULT constraint is used to automatically insert a default value for a column, if no value is specified.
+The default value will be added to all new records (if no other value is specified).
+
+-------------------------------------------------------------------------------------------------------------------------
+CREATE INDEX Statement
+The CREATE INDEX statement is used to create indexes on tables in databases, to speed up data retrieval.
+The users cannot see the indexes, they are just used to speed up searches/queries.
+
+There are two types of indexes:
+CREATE INDEX - Creates a non-unique index (duplicate values are allowed)
+CREATE UNIQUE INDEX - Creates a unique index (duplicate values are not allowed)
+
