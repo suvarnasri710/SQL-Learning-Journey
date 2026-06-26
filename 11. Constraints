@@ -1,0 +1,27 @@
+constraints are rules for data in a table.
+Constraints are used to prevent insertion of invalid data in a table
+
+SQL Constraint Types
+The following constraints are commonly used in SQL:
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are unique
+PRIMARY KEY - Uniquely identifies each row in a table (a combination of a NOT NULL and UNIQUE)
+FOREIGN KEY - Establishes a link between data in two tables, and prevents action that will destroy the link between them
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Creates indexes on columns to retrieve data from the database faster
+--------------------------------------------------------------------------------------------------------------------------
+NULL and NOT NULL are constraints that determine whether a column can store empty values.
+
+NULL : A column with the NULL constraint can store an empty or unknown value.
+NULL does not mean 0, an empty string. It simply means the value is unknown or not provided.
+
+NOT NULL : A column with the NOT NULL constraint must contain a value.
+You cannot insert or update a row without providing a value for that column.
+
+NULL	                                              NOT NULL
+Value is optional	                                  Value is mandatory
+Empty values are allowed	                          Empty values are not allowed
+Used for optional information	                      Used for required information
+Example: Middle Name, Alternate Phone	              Example: Student ID, Name
