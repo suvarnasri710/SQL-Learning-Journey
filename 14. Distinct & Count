@@ -1,0 +1,14 @@
+DISTINCT: 
+The DISTINCT statement is used to return only unique values.
+Used to remove the duplicates from a table and display unique values.
+
+syntax:
+SELECT DISTINCT column1, column2 FROM table_name;
+
+--------------------------------------------------------------------------
+
+COUNT :
+we can count the number of distinct names are there by using COUNT keyword returns the number.
+
+syntax : 
+SELECT COUNT(DISTINCT column_name) FROM table_name;
