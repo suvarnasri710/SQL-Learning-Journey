@@ -1,3 +1,32 @@
+WHERE Clause is used to filter records.
+used to extract only those records that fulfill a specific condition.
+
+Syntax
+SELECT column1, column2, ... FROM table_name
+WHERE condition;
+
+Note: The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.
+
+
+Operators in The WHERE Clause: 
+You can use other operators than the = operator to filter the search.
+
+The following operators can be used in the WHERE clause:
+
+Operator	Description	
+=		Equal	
+>		Greater than	
+<		Less than	
+>=		Greater than or equal	
+<=		Less than or equal	
+<>		Not equal. Note: In some versions of SQL this operator may be written as !=	
+BETWEEN		Between a certain range	
+LIKE		Search for a pattern	
+IN		To specify multiple possible values for a column
+
+------------------------------------------------------------------------------------------------------------------
+
+
 select * from students;
 +----+---------+------+--------+
 | id | name    | year | course |
